@@ -1,0 +1,13 @@
+更新日志
+    Spring Framework 4.3.9 发布了，Spring Framework 为基于 Java 的企业应用提供了一个全面的编程和配置模型。
+    此维护版本是即将发布的 Spring Boot 1.4.7 和 1.5.4 版本的基础，包括有超过30处修补程序和指定改进。
+    部分更新内容：
+    Bug
+    [SPR-15481] - AnnotationUtils.getValue() 隐藏相关错误
+    [SPR-15485] - 最终的 Resource 检查从 Tomcat war 创建：file: URL fails with FileNotFoundException
+    [SPR-15487] - Spring Test ModelResultMatchers 欺骗性错误消息
+    [SPR-15505] - AbstractFlashMapManager.isFlashMapForRequest 不会一致检查转发的请求
+    [SPR-15507] - Property.jav 无法抛出"Not a setter" 异常
+    提升
+    [SPR-15477] - 检查潜在匹配时优化 Optimize AntPathMatcher
+    [SPR-15479] - 将 getTargetCache 添加到 TransactionAwareCacheDecorator

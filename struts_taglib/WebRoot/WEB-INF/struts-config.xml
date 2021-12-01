@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+	
+	<action-mappings>
+		<action path="/beanwrite"
+				type="com.bjsxt.struts.BeanWriteTestAction"
+		>
+			<forward name="success" path="/beanwrite.jsp"/>
+		</action>
+		
+		<action path="/emptypresent"
+				type="com.bjsxt.struts.EmptyPresentTestAction"
+		>
+			<forward name="success" path="/emptypresent.jsp"/>
+		</action>
+		
+		<action path="/iterate"
+				type="com.bjsxt.struts.IterateTestAction"
+		>
+			<forward name="success" path="/iterate.jsp"/>
+		</action>
+	</action-mappings>
+	
+	<message-resources parameter="MessageResources" />
+</struts-config>
+

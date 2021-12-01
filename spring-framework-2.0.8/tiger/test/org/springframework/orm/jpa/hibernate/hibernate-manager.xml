@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	
+	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		<property name="persistenceXmlLocation" value="org/springframework/orm/jpa/domain/persistence.xml"/>
+		<property name="dataSource" ref="dataSource"/>
+		<property name="jpaVendorAdapter">
+			<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+				<property name="database" value="HSQL"/>
+				<property name="showSql" value="true"/>
+				<property name="generateDdl" value="true"/>
+			</bean>
+		</property>
+		<property name="jpaPropertyMap">
+			<props>
+				<prop key="hibernate.cache.provider_class">org.hibernate.cache.HashtableCacheProvider</prop>
+				<!--
+				<prop key="hibernate.ejb.use_class_enhancer">true</prop>
+				 -->
+			</props>
+		</property>
+	</bean>
+
+</beans>

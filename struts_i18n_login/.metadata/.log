@@ -1,0 +1,39 @@
+!SESSION 2011-11-12 09:01:09.921 -----------------------------------------------
+eclipse.buildId=M20060921-0945
+java.version=1.5.0_08
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -data D:\struts\struts_i18n_login -os win32 -ws win32 -arch x86
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2011-11-12 09:02:43.500
+!MESSAGE Installed snippet library: D:\Program Files\MyEclipse 5.1.1 GA\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_5.1.1\snippets\css_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2011-11-12 09:02:43.687
+!MESSAGE Installed snippet library: D:\Program Files\MyEclipse 5.1.1 GA\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_5.1.1\snippets\forms_lists_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2011-11-12 09:02:43.843
+!MESSAGE Installed snippet library: D:\Program Files\MyEclipse 5.1.1 GA\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_5.1.1\snippets\htmlform_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2011-11-12 09:02:43.968
+!MESSAGE Installed snippet library: D:\Program Files\MyEclipse 5.1.1 GA\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_5.1.1\snippets\html_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2011-11-12 09:02:44.093
+!MESSAGE Installed snippet library: D:\Program Files\MyEclipse 5.1.1 GA\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_5.1.1\snippets\javascript_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2011-11-12 09:02:44.234
+!MESSAGE Installed snippet library: D:\Program Files\MyEclipse 5.1.1 GA\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_5.1.1\snippets\jsf_f_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2011-11-12 09:02:44.406
+!MESSAGE Installed snippet library: D:\Program Files\MyEclipse 5.1.1 GA\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_5.1.1\snippets\jsf_h_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2011-11-12 09:02:44.515
+!MESSAGE Installed snippet library: D:\Program Files\MyEclipse 5.1.1 GA\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_5.1.1\snippets\struts_bean_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2011-11-12 09:02:44.625
+!MESSAGE Installed snippet library: D:\Program Files\MyEclipse 5.1.1 GA\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_5.1.1\snippets\struts_html_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2011-11-12 09:02:44.718
+!MESSAGE Installed snippet library: D:\Program Files\MyEclipse 5.1.1 GA\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_5.1.1\snippets\struts_logic_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2011-11-12 09:02:44.812
+!MESSAGE Installed snippet library: D:\Program Files\MyEclipse 5.1.1 GA\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_5.1.1\snippets\struts_tiles_snippets.xml

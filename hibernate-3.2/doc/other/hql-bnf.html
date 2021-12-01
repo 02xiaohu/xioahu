@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+   <meta name="generator" content="Syntax Diagram Generator 2, [BSD license] (c) Mark Malakanov, 2004">
+   <meta name="description" content="Syntax Diagram">
+   <META NAME="resource-type" CONTENT="document">
+   <META NAME="distribution" CONTENT="global">
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <TITLE>Hibernate</TITLE>
+</HEAD>
+
+<BODY>
+<CENTER>
+<H1>Hibernate</H1>
+</CENTER>
+
+<IMG name="statement" src="hql-bnf/statement.png" border="null" usemap="#map_statement"><p>
+<map name="map_statement">
+ <area coords="263,20,410,40" href="#updateStatement" alt="updateStatement"> <area coords="266,75,407,95" href="#deleteStatement" alt="deleteStatement"> <area coords="267,130,405,150" href="#selectStatement" alt="selectStatement"> <area coords="267,185,405,205" href="#insertStatement" alt="insertStatement"></map>
+<IMG name="updateStatement" src="hql-bnf/updateStatement.png" border="null" usemap="#map_updateStatement"><p>
+<map name="map_updateStatement">
+ <area coords="656,20,904,40" href="#optionalFromTokenFromClause" alt="optionalFromTokenFromClause"> <area coords="954,20,1050,40" href="#setClause" alt="setClause"> <area coords="1100,20,1218,40" href="#whereClause" alt="whereClause"></map>
+<IMG name="setClause" src="hql-bnf/setClause.png" border="null" usemap="#map_setClause"><p>
+<map name="map_setClause">
+ <area coords="365,20,474,40" href="#assignment" alt="assignment"> <area coords="659,20,768,40" href="#assignment" alt="assignment"></map>
+<IMG name="assignment" src="hql-bnf/assignment.png" border="null" usemap="#map_assignment"><p>
+<map name="map_assignment">
+ <area coords="279,20,375,40" href="#stateField" alt="stateField"> <area coords="524,20,620,40" href="#newValue" alt="newValue"></map>
+<IMG name="stateField" src="hql-bnf/stateField.png" border="null" usemap="#map_stateField"><p>
+<map name="map_stateField">
+ <area coords="261,20,322,40" href="#path" alt="path"></map>
+<IMG name="newValue" src="hql-bnf/newValue.png" border="null" usemap="#map_newValue"><p>
+<map name="map_newValue">
+ <area coords="260,20,387,40" href="#concatenation" alt="concatenation"></map>
+<IMG name="deleteStatement" src="hql-bnf/deleteStatement.png" border="null" usemap="#map_deleteStatement"><p>
+<map name="map_deleteStatement">
+ <area coords="457,20,705,40" href="#optionalFromTokenFromClause" alt="optionalFromTokenFromClause"> <area coords="785,20,903,40" href="#whereClause" alt="whereClause"></map>
+<IMG name="optionalFromTokenFromClause" src="hql-bnf/optionalFromTokenFromClause.png" border="null" usemap="#map_optionalFromTokenFromClause"><p>
+<map name="map_optionalFromTokenFromClause">
+ <area coords="634,20,695,40" href="#path" alt="path"> <area coords="745,20,823,40" href="#asAlias" alt="asAlias"></map>
+<IMG name="selectStatement" src="hql-bnf/selectStatement.png" border="null" usemap="#map_selectStatement"><p>
+<map name="map_selectStatement">
+ <area coords="324,20,423,40" href="#queryRule" alt="queryRule"></map>
+<IMG name="insertStatement" src="hql-bnf/insertStatement.png" border="null" usemap="#map_insertStatement"><p>
+<map name="map_insertStatement">
+ <area coords="451,20,554,40" href="#intoClause" alt="intoClause"> <area coords="604,20,742,40" href="#selectStatement" alt="selectStatement"></map>
+<IMG name="intoClause" src="hql-bnf/intoClause.png" border="null" usemap="#map_intoClause"><p>
+<map name="map_intoClause">
+ <area coords="384,20,445,40" href="#path" alt="path"> <area coords="495,20,683,40" href="#insertablePropertySpec" alt="insertablePropertySpec"></map>
+<IMG name="insertablePropertySpec" src="hql-bnf/insertablePropertySpec.png" border="null" usemap="#map_insertablePropertySpec"><p>
+<map name="map_insertablePropertySpec">
+ <area coords="516,20,675,40" href="#primaryExpression" alt="primaryExpression"> <area coords="860,20,1019,40" href="#primaryExpression" alt="primaryExpression"></map>
+<IMG name="union" src="hql-bnf/union.png" border="null" usemap="#map_union"><p>
+<map name="map_union">
+ <area coords="219,20,318,40" href="#queryRule" alt="queryRule"> <area coords="493,20,592,40" href="#queryRule" alt="queryRule"></map>
+<IMG name="queryRule" src="hql-bnf/queryRule.png" border="null" usemap="#map_queryRule"><p>
+<map name="map_queryRule">
+ <area coords="265,20,370,40" href="#selectFrom" alt="selectFrom"> <area coords="420,20,538,40" href="#whereClause" alt="whereClause"> <area coords="618,20,751,40" href="#groupByClause" alt="groupByClause"> <area coords="831,20,960,40" href="#orderByClause" alt="orderByClause"></map>
+<IMG name="selectFrom" src="hql-bnf/selectFrom.png" border="null" usemap="#map_selectFrom"><p>
+<map name="map_selectFrom">
+ <area coords="273,20,388,40" href="#selectClause" alt="selectClause"> <area coords="468,20,577,40" href="#fromClause" alt="fromClause"></map>
+<IMG name="selectClause" src="hql-bnf/selectClause.png" border="null" usemap="#map_selectClause"><p>
+<map name="map_selectClause">
+ <area coords="594,20,773,40" href="#selectedPropertiesList" alt="selectedPropertiesList"> <area coords="616,75,750,95" href="#newExpression" alt="newExpression"> <area coords="627,130,740,150" href="#selectObject" alt="selectObject"></map>
+<IMG name="newExpression" src="hql-bnf/newExpression.png" border="null" usemap="#map_newExpression"><p>
+<map name="map_newExpression">
+ <area coords="425,20,486,40" href="#path" alt="path"> <area coords="683,20,862,40" href="#selectedPropertiesList" alt="selectedPropertiesList"></map>
+<IMG name="selectObject" src="hql-bnf/selectObject.png" border="null" usemap="#map_selectObject"><p>
+<map name="map_selectObject">
+ <area coords="535,20,627,40" href="#identifier" alt="identifier"></map>
+<IMG name="fromClause" src="hql-bnf/fromClause.png" border="null" usemap="#map_fromClause"><p>
+<map name="map_fromClause">
+ <area coords="398,20,504,40" href="#fromRange" alt="fromRange"> <area coords="630,20,719,40" href="#fromJoin" alt="fromJoin"> <area coords="689,75,795,95" href="#fromRange" alt="fromRange"></map>
+<IMG name="fromJoin" src="hql-bnf/fromJoin.png" border="null" usemap="#map_fromJoin"><p>
+<map name="map_fromJoin">
+ <area coords="883,20,944,40" href="#path" alt="path"> <area coords="994,20,1072,40" href="#asAlias" alt="asAlias"> <area coords="1152,20,1278,40" href="#propertyFetch" alt="propertyFetch"> <area coords="1358,20,1463,40" href="#withClause" alt="withClause"></map>
+<IMG name="withClause" src="hql-bnf/withClause.png" border="null" usemap="#map_withClause"><p>
+<map name="map_withClause">
+ <area coords="389,20,540,40" href="#logicalExpression" alt="logicalExpression"></map>
+<IMG name="fromRange" src="hql-bnf/fromRange.png" border="null" usemap="#map_fromRange"><p>
+<map name="map_fromRange">
+ <area coords="286,20,512,40" href="#fromClassOrOuterQueryPath" alt="fromClassOrOuterQueryPath"> <area coords="321,75,478,95" href="#inClassDeclaration" alt="inClassDeclaration"> <area coords="304,130,494,150" href="#inCollectionDeclaration" alt="inCollectionDeclaration"> <area coords="273,185,525,205" href="#inCollectionElementsDeclaration" alt="inCollectionElementsDeclaration"></map>
+<IMG name="fromClassOrOuterQueryPath" src="hql-bnf/fromClassOrOuterQueryPath.png" border="null" usemap="#map_fromClassOrOuterQueryPath"><p>
+<map name="map_fromClassOrOuterQueryPath">
+ <area coords="454,20,515,40" href="#path" alt="path"> <area coords="565,20,643,40" href="#asAlias" alt="asAlias"> <area coords="723,20,849,40" href="#propertyFetch" alt="propertyFetch"></map>
+<IMG name="inClassDeclaration" src="hql-bnf/inClassDeclaration.png" border="null" usemap="#map_inClassDeclaration"><p>
+<map name="map_inClassDeclaration">
+ <area coords="355,20,416,40" href="#alias" alt="alias"> <area coords="683,20,744,40" href="#path" alt="path"></map>
+<IMG name="inCollectionDeclaration" src="hql-bnf/inCollectionDeclaration.png" border="null" usemap="#map_inCollectionDeclaration"><p>
+<map name="map_inCollectionDeclaration">
+ <area coords="616,20,677,40" href="#path" alt="path"> <area coords="851,20,912,40" href="#alias" alt="alias"></map>
+<IMG name="inCollectionElementsDeclaration" src="hql-bnf/inCollectionElementsDeclaration.png" border="null" usemap="#map_inCollectionElementsDeclaration"><p>
+<map name="map_inCollectionElementsDeclaration">
+ <area coords="499,20,560,40" href="#alias" alt="alias"> <area coords="971,20,1032,40" href="#path" alt="path"></map>
+<IMG name="asAlias" src="hql-bnf/asAlias.png" border="null" usemap="#map_asAlias"><p>
+<map name="map_asAlias">
+ <area coords="363,20,424,40" href="#alias" alt="alias"></map>
+<IMG name="alias" src="hql-bnf/alias.png" border="null" usemap="#map_alias"><p>
+<map name="map_alias">
+ <area coords="209,20,301,40" href="#identifier" alt="identifier"></map>
+<IMG name="propertyFetch" src="hql-bnf/propertyFetch.png" border="null" usemap="#map_propertyFetch"><p>
+<map name="map_propertyFetch">
+</map>
+<IMG name="groupByClause" src="hql-bnf/groupByClause.png" border="null" usemap="#map_groupByClause"><p>
+<map name="map_groupByClause">
+ <area coords="549,20,655,40" href="#expression" alt="expression"> <area coords="840,20,946,40" href="#expression" alt="expression"> <area coords="1026,20,1148,40" href="#havingClause" alt="havingClause"></map>
+<IMG name="orderByClause" src="hql-bnf/orderByClause.png" border="null" usemap="#map_orderByClause"><p>
+<map name="map_orderByClause">
+ <area coords="543,20,666,40" href="#orderElement" alt="orderElement"> <area coords="851,20,974,40" href="#orderElement" alt="orderElement"></map>
+<IMG name="orderElement" src="hql-bnf/orderElement.png" border="null" usemap="#map_orderElement"><p>
+<map name="map_orderElement">
+ <area coords="299,20,405,40" href="#expression" alt="expression"> <area coords="455,20,652,40" href="#ascendingOrDescending" alt="ascendingOrDescending"></map>
+<IMG name="ascendingOrDescending" src="hql-bnf/ascendingOrDescending.png" border="null" usemap="#map_ascendingOrDescending"><p>
+<map name="map_ascendingOrDescending">
+</map>
+<IMG name="havingClause" src="hql-bnf/havingClause.png" border="null" usemap="#map_havingClause"><p>
+<map name="map_havingClause">
+ <area coords="432,20,583,40" href="#logicalExpression" alt="logicalExpression"></map>
+<IMG name="whereClause" src="hql-bnf/whereClause.png" border="null" usemap="#map_whereClause"><p>
+<map name="map_whereClause">
+ <area coords="419,20,570,40" href="#logicalExpression" alt="logicalExpression"></map>
+<IMG name="selectedPropertiesList" src="hql-bnf/selectedPropertiesList.png" border="null" usemap="#map_selectedPropertiesList"><p>
+<map name="map_selectedPropertiesList">
+ <area coords="390,20,544,40" href="#aliasedExpression" alt="aliasedExpression"> <area coords="729,20,883,40" href="#aliasedExpression" alt="aliasedExpression"></map>
+<IMG name="aliasedExpression" src="hql-bnf/aliasedExpression.png" border="null" usemap="#map_aliasedExpression"><p>
+<map name="map_aliasedExpression">
+ <area coords="347,20,453,40" href="#expression" alt="expression"> <area coords="601,20,693,40" href="#identifier" alt="identifier"></map>
+<IMG name="logicalExpression" src="hql-bnf/logicalExpression.png" border="null" usemap="#map_logicalExpression"><p>
+<map name="map_logicalExpression">
+ <area coords="343,20,449,40" href="#expression" alt="expression"></map>
+<IMG name="expression" src="hql-bnf/expression.png" border="null" usemap="#map_expression"><p>
+<map name="map_expression">
+ <area coords="273,20,441,40" href="#logicalOrExpression" alt="logicalOrExpression"></map>
+<IMG name="logicalOrExpression" src="hql-bnf/logicalOrExpression.png" border="null" usemap="#map_logicalOrExpression"><p>
+<map name="map_logicalOrExpression">
+ <area coords="368,20,547,40" href="#logicalAndExpression" alt="logicalAndExpression"> <area coords="697,20,876,40" href="#logicalAndExpression" alt="logicalAndExpression"></map>
+<IMG name="logicalAndExpression" src="hql-bnf/logicalAndExpression.png" border="null" usemap="#map_logicalAndExpression"><p>
+<map name="map_logicalAndExpression">
+ <area coords="384,20,546,40" href="#negatedExpression" alt="negatedExpression"> <area coords="706,20,868,40" href="#negatedExpression" alt="negatedExpression"></map>
+<IMG name="negatedExpression" src="hql-bnf/negatedExpression.png" border="null" usemap="#map_negatedExpression"><p>
+<map name="map_negatedExpression">
+ <area coords="466,20,628,40" href="#negatedExpression" alt="negatedExpression"> <area coords="412,75,572,95" href="#equalityExpression" alt="equalityExpression"></map>
+<IMG name="equalityExpression" src="hql-bnf/equalityExpression.png" border="null" usemap="#map_equalityExpression"><p>
+<map name="map_equalityExpression">
+ <area coords="357,20,528,40" href="#relationalExpression" alt="relationalExpression"> <area coords="840,20,1011,40" href="#relationalExpression" alt="relationalExpression"></map>
+<IMG name="relationalExpression" src="hql-bnf/relationalExpression.png" border="null" usemap="#map_relationalExpression"><p>
+<map name="map_relationalExpression">
+ <area coords="373,20,500,40" href="#concatenation" alt="concatenation"> <area coords="798,20,958,40" href="#additiveExpression" alt="additiveExpression"> <area coords="897,240,963,260" href="#inList" alt="inList"> <area coords="899,295,1010,315" href="#betweenList" alt="betweenList"> <area coords="798,350,925,370" href="#concatenation" alt="concatenation"> <area coords="975,350,1076,370" href="#likeEscape" alt="likeEscape"> <area coords="986,405,1047,425" href="#path" alt="path"></map>
+<IMG name="likeEscape" src="hql-bnf/likeEscape.png" border="null" usemap="#map_likeEscape"><p>
+<map name="map_likeEscape">
+ <area coords="402,20,529,40" href="#concatenation" alt="concatenation"></map>
+<IMG name="inList" src="hql-bnf/inList.png" border="null" usemap="#map_inList"><p>
+<map name="map_inList">
+ <area coords="218,20,354,40" href="#compoundExpr" alt="compoundExpr"></map>
+<IMG name="betweenList" src="hql-bnf/betweenList.png" border="null" usemap="#map_betweenList"><p>
+<map name="map_betweenList">
+ <area coords="285,20,412,40" href="#concatenation" alt="concatenation"> <area coords="572,20,699,40" href="#concatenation" alt="concatenation"></map>
+<IMG name="concatenation" src="hql-bnf/concatenation.png" border="null" usemap="#map_concatenation"><p>
+<map name="map_concatenation">
+ <area coords="306,20,466,40" href="#additiveExpression" alt="additiveExpression"> <area coords="656,20,816,40" href="#additiveExpression" alt="additiveExpression"> <area coords="1006,20,1166,40" href="#additiveExpression" alt="additiveExpression"></map>
+<IMG name="additiveExpression" src="hql-bnf/additiveExpression.png" border="null" usemap="#map_additiveExpression"><p>
+<map name="map_additiveExpression">
+ <area coords="357,20,518,40" href="#multiplyExpression" alt="multiplyExpression"> <area coords="722,20,883,40" href="#multiplyExpression" alt="multiplyExpression"></map>
+<IMG name="multiplyExpression" src="hql-bnf/multiplyExpression.png" border="null" usemap="#map_multiplyExpression"><p>
+<map name="map_multiplyExpression">
+ <area coords="359,20,504,40" href="#unaryExpression" alt="unaryExpression"> <area coords="700,20,845,40" href="#unaryExpression" alt="unaryExpression"></map>
+<IMG name="unaryExpression" src="hql-bnf/unaryExpression.png" border="null" usemap="#map_unaryExpression"><p>
+<map name="map_unaryExpression">
+ <area coords="456,20,601,40" href="#unaryExpression" alt="unaryExpression"> <area coords="450,75,595,95" href="#unaryExpression" alt="unaryExpression"> <area coords="398,130,534,150" href="#caseExpression" alt="caseExpression"> <area coords="378,185,554,205" href="#quantifiedExpression" alt="quantifiedExpression"> <area coords="434,240,499,260" href="#atom" alt="atom"></map>
+<IMG name="caseExpression" src="hql-bnf/caseExpression.png" border="null" usemap="#map_caseExpression"><p>
+<map name="map_caseExpression">
+ <area coords="541,20,654,40" href="#whenClause" alt="whenClause"> <area coords="734,20,837,40" href="#elseClause" alt="elseClause"> <area coords="435,75,580,95" href="#unaryExpression" alt="unaryExpression"> <area coords="630,75,761,95" href="#altWhenClause" alt="altWhenClause"> <area coords="841,75,944,95" href="#elseClause" alt="elseClause"></map>
+<IMG name="whenClause" src="hql-bnf/whenClause.png" border="null" usemap="#map_whenClause"><p>
+<map name="map_whenClause">
+ <area coords="404,20,555,40" href="#logicalExpression" alt="logicalExpression"> <area coords="722,20,867,40" href="#unaryExpression" alt="unaryExpression"></map>
+<IMG name="altWhenClause" src="hql-bnf/altWhenClause.png" border="null" usemap="#map_altWhenClause"><p>
+<map name="map_altWhenClause">
+ <area coords="432,20,577,40" href="#unaryExpression" alt="unaryExpression"> <area coords="744,20,889,40" href="#unaryExpression" alt="unaryExpression"></map>
+<IMG name="elseClause" src="hql-bnf/elseClause.png" border="null" usemap="#map_elseClause"><p>
+<map name="map_elseClause">
+ <area coords="382,20,527,40" href="#unaryExpression" alt="unaryExpression"></map>
+<IMG name="quantifiedExpression" src="hql-bnf/quantifiedExpression.png" border="null" usemap="#map_quantifiedExpression"><p>
+<map name="map_quantifiedExpression">
+ <area coords="687,20,779,40" href="#identifier" alt="identifier"> <area coords="669,75,797,95" href="#collectionExpr" alt="collectionExpr"> <area coords="652,130,748,150" href="#subQuery" alt="subQuery"></map>
+<IMG name="atom" src="hql-bnf/atom.png" border="null" usemap="#map_atom"><p>
+<map name="map_atom">
+ <area coords="212,20,371,40" href="#primaryExpression" alt="primaryExpression"> <area coords="531,20,623,40" href="#identifier" alt="identifier"> <area coords="790,20,875,40" href="#exprList" alt="exprList"> <area coords="684,75,790,95" href="#expression" alt="expression"></map>
+<IMG name="primaryExpression" src="hql-bnf/primaryExpression.png" border="null" usemap="#map_primaryExpression"><p>
+<map name="map_primaryExpression">
+ <area coords="383,20,500,40" href="#identPrimary" alt="identPrimary"> <area coords="529,75,618,95" href="#constant" alt="constant"> <area coords="592,130,684,150" href="#identifier" alt="identifier"> <area coords="471,185,638,205" href="#expressionOrVector" alt="expressionOrVector"> <area coords="506,240,602,260" href="#subQuery" alt="subQuery"></map>
+<IMG name="expressionOrVector" src="hql-bnf/expressionOrVector.png" border="null" usemap="#map_expressionOrVector"><p>
+<map name="map_expressionOrVector">
+ <area coords="365,20,471,40" href="#expression" alt="expression"> <area coords="521,20,625,40" href="#vectorExpr" alt="vectorExpr"></map>
+<IMG name="vectorExpr" src="hql-bnf/vectorExpr.png" border="null" usemap="#map_vectorExpr"><p>
+<map name="map_vectorExpr">
+ <area coords="406,20,512,40" href="#expression" alt="expression"> <area coords="697,20,803,40" href="#expression" alt="expression"></map>
+<IMG name="identPrimary" src="hql-bnf/identPrimary.png" border="null" usemap="#map_identPrimary"><p>
+<map name="map_identPrimary">
+ <area coords="293,20,385,40" href="#identifier" alt="identifier"> <area coords="549,20,641,40" href="#identifier" alt="identifier"> <area coords="872,20,957,40" href="#exprList" alt="exprList"> <area coords="667,185,767,205" href="#aggregate" alt="aggregate"></map>
+<IMG name="aggregate" src="hql-bnf/aggregate.png" border="null" usemap="#map_aggregate"><p>
+<map name="map_aggregate">
+ <area coords="632,20,792,40" href="#additiveExpression" alt="additiveExpression"> <area coords="719,295,780,315" href="#path" alt="path"> <area coords="685,350,813,370" href="#collectionExpr" alt="collectionExpr"> <area coords="581,405,709,425" href="#collectionExpr" alt="collectionExpr"></map>
+<IMG name="collectionExpr" src="hql-bnf/collectionExpr.png" border="null" usemap="#map_collectionExpr"><p>
+<map name="map_collectionExpr">
+ <area coords="605,20,666,40" href="#path" alt="path"></map>
+<IMG name="compoundExpr" src="hql-bnf/compoundExpr.png" border="null" usemap="#map_compoundExpr"><p>
+<map name="map_compoundExpr">
+ <area coords="629,20,757,40" href="#collectionExpr" alt="collectionExpr"> <area coords="663,75,724,95" href="#path" alt="path"> <area coords="431,130,537,150" href="#expression" alt="expression"> <area coords="722,130,828,150" href="#expression" alt="expression"> <area coords="611,185,707,205" href="#subQuery" alt="subQuery"></map>
+<IMG name="subQuery" src="hql-bnf/subQuery.png" border="null" usemap="#map_subQuery"><p>
+<map name="map_subQuery">
+ <area coords="259,20,329,40" href="#union" alt="union"></map>
+<IMG name="exprList" src="hql-bnf/exprList.png" border="null" usemap="#map_exprList"><p>
+<map name="map_exprList">
+ <area coords="417,20,523,40" href="#expression" alt="expression"> <area coords="708,20,814,40" href="#expression" alt="expression"> <area coords="715,75,821,95" href="#expression" alt="expression"> <area coords="711,130,803,150" href="#identifier" alt="identifier"> <area coords="652,185,758,205" href="#expression" alt="expression"></map>
+<IMG name="constant" src="hql-bnf/constant.png" border="null" usemap="#map_constant"><p>
+<map name="map_constant">
+</map>
+<IMG name="path" src="hql-bnf/path.png" border="null" usemap="#map_path"><p>
+<map name="map_path">
+ <area coords="206,20,298,40" href="#identifier" alt="identifier"> <area coords="458,20,550,40" href="#identifier" alt="identifier"></map>
+<IMG name="identifier" src="hql-bnf/identifier.png" border="null" usemap="#map_identifier"><p>
+<map name="map_identifier">
+</map>
+</BODY>
+</HTML>

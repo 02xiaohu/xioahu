@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+<struts-config>
+	<form-beans>
+		<form-bean name="loginForm" type="com.bjsxt.drp.web.itemmgr.forms.LoginActionForm"/>
+		<form-bean name="itemForm" type="com.bjsxt.drp.web.itemmgr.forms.ItemActionForm"></form-bean>
+	</form-beans>
+	
+	<global-exceptions>
+	   <exception key="error.exception" 
+                  type="com.bjsxt.drp.business.util.AppException"
+                  handler="com.bjsxt.drp.web.util.DrpExceptionHandler"
+                  path="/WEB-INF/jsp/error.jsp"/>    
+	
+	</global-exceptions>
+	
+	<global-forwards>
+		<forward name="index" path="/index.jsp" redirect="true"/>
+	</global-forwards>
+	
+ 	<action-mappings>
+
+		<action path="/user/login"
+				type="com.bjsxt.drp.web.itemmgr.actions.LoginAction"
+				name="loginForm"
+				scope="request"
+		>
+			<forward name="sucess" path="/basedata/item.do?command=list&amp;pageNo=1&amp;pageSize=2" redirect="true"/>
+		</action>
+ 		
+ 		<action path="/basedata/additem"
+ 				forward="/WEB-INF/jsp/basedata/item_add.jsp"
+ 				name="itemForm"
+ 		>
+ 		</action>
+ 	
+		<action path="/basedata/item"
+				type="com.bjsxt.drp.web.itemmgr.actions.ItemAction"
+				name="itemForm"
+				scope="request"
+				parameter="command"
+		>
+				<forward name="modify_detail" path="/WEB-INF/jsp/basedata/item_modify.jsp"/>
+				<forward name="find_detail" path="/WEB-INF/jsp/basedata/item_detail.jsp"/>
+				<forward name="list_success" path="/WEB-INF/jsp/basedata/item_maint.jsp"/>
+				<forward name="upload_detail" path="/WEB-INF/jsp/basedata/item_upload.jsp"/>
+		</action>
+		
+		<action path="/basedata/changelan"
+				type="com.bjsxt.drp.web.itemmgr.actions.ChangeLanguageAction"
+				scope="request"
+		>
+				<forward name="success" path="/index.jsp" redirect="true"/>
+		</action>
+		
+	</action-mappings>
+ 
+    <message-resources parameter="MessageResources" />
+</struts-config>

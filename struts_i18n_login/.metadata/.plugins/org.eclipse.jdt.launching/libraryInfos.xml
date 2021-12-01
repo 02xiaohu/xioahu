@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libraryInfos>
+<libraryInfo home="D:\Program Files\MyEclipse 5.1.1 GA\jre" version="1.5.0_08">
+<bootpath>
+<entry path="D:\Program Files\MyEclipse 5.1.1 GA\jre\lib\rt.jar"/>
+<entry path="D:\Program Files\MyEclipse 5.1.1 GA\jre\lib\i18n.jar"/>
+<entry path="D:\Program Files\MyEclipse 5.1.1 GA\jre\lib\sunrsasign.jar"/>
+<entry path="D:\Program Files\MyEclipse 5.1.1 GA\jre\lib\jsse.jar"/>
+<entry path="D:\Program Files\MyEclipse 5.1.1 GA\jre\lib\jce.jar"/>
+<entry path="D:\Program Files\MyEclipse 5.1.1 GA\jre\lib\charsets.jar"/>
+<entry path="D:\Program Files\MyEclipse 5.1.1 GA\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="D:\Program Files\MyEclipse 5.1.1 GA\jre\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="D:\Program Files\MyEclipse 5.1.1 GA\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="D:\Program Files\MyEclipse 5.1.1 GA" version="1.5.0_08">
+<bootpath>
+<entry path="D:\Program Files\MyEclipse 5.1.1 GA\jre\lib\rt.jar"/>
+<entry path="D:\Program Files\MyEclipse 5.1.1 GA\jre\lib\i18n.jar"/>
+<entry path="D:\Program Files\MyEclipse 5.1.1 GA\jre\lib\sunrsasign.jar"/>
+<entry path="D:\Program Files\MyEclipse 5.1.1 GA\jre\lib\jsse.jar"/>
+<entry path="D:\Program Files\MyEclipse 5.1.1 GA\jre\lib\jce.jar"/>
+<entry path="D:\Program Files\MyEclipse 5.1.1 GA\jre\lib\charsets.jar"/>
+<entry path="D:\Program Files\MyEclipse 5.1.1 GA\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="D:\Program Files\MyEclipse 5.1.1 GA\jre\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="D:\Program Files\MyEclipse 5.1.1 GA\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>

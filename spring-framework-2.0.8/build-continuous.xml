@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!--
+  =======================================================================
+  Build file containing targets for continuously integrating build
+  =======================================================================
+-->
+<project name="build-spring-continuous" default="snapshot" xmlns:aws="antlib:org.springframework.aws">
+
+	<import file="${basedir}/build.xml"/>
+    	
+	<target name="automated-build" depends="clean,testsummary,release"/>
+
+    <target name="upload" depends="upload-s3"/>
+
+	<target name="upload-s3" depends="s3.tasks, guard.s3.accessKey, guard.s3.secretKey">
+		<tstamp>
+			<format property="tstamp" pattern="yyyyMMdd"/>
+		</tstamp>
+		<aws:s3 accessKey="${s3.accessKey}" secretKey="${s3.secretKey}">
+			<upload bucketName="dist.springframework.org"
+			        file="${target.release.dir}/${release-with-dependencies.zip}"
+			        toFile="snapshot/SPR/spring-framework-${spring-version}-with-dependencies-${tstamp}-${build.number}.zip"
+					publicRead="true"/>
+			<upload bucketName="dist.springframework.org"
+			        file="${target.release.dir}/${release.zip}"
+			        toFile="snapshot/SPR/spring-framework-${spring-version}-${tstamp}-${build.number}.zip"
+					publicRead="true"/>
+		</aws:s3>
+	</target>
+
+    <target name="guard.s3.accessKey" unless ="s3.accessKey">
+		<fail message="This target requires the s3.accesskey property to be set"/>
+	</target>
+
+	<target name="guard.s3.secretKey" unless ="s3.secretKey">
+		<fail message="This target requires the s3.secretKey property to be set"/>
+	</target>
+	
+	<target name="s3.tasks">
+		<path id="aws.lib.path">
+			<fileset dir="${basedir}/lib">
+				<include name="aws/spring-aws-ant.jar"/>
+				<include name="jets3t/jets3t.jar"/>
+				<include name="jakarta-commons/commons-codec.jar"/>
+				<include name="jakarta-commons/commons-httpclient.jar"/>
+				<include name="jakarta-commons/commons-logging.jar"/>
+			</fileset>
+		</path>
+		<taskdef resource="org/springframework/aws/antlib.xml" uri="antlib:org.springframework.aws"
+			classpathref="aws.lib.path" />
+	</target>
+    
+</project>

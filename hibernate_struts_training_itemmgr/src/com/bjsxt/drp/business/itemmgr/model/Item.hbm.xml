@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.bjsxt.drp.business.itemmgr.model">
+	<class name="Item" table="t_items">
+		<id name="itemNo">
+			<generator class="assigned"/>
+		</id>
+		<property name="itemName" not-null="true"/>
+		<property name="spec"/>
+		<property name="pattern"/>
+		<many-to-one name="category"/>
+		<many-to-one name="unit"/>
+	</class>
+</hibernate-mapping>

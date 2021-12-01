@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+
+	<action-mappings>
+		<action path="/jstlel"
+				type="com.bjsxt.struts.JstlElAction"
+		>
+			<forward name="success" path="/jstl_el.jsp"/>
+		</action>
+		
+		<action path="/jstlcore"
+				type="com.bjsxt.struts.JstlCoreAction"
+		>
+			<forward name="success" path="/jstl_core.jsp"/>
+		</action>
+		
+		<action path="/jstlfmt"
+				type="com.bjsxt.struts.JstlFmtAction"
+		>
+			<forward name="success" path="/jstl_fmt.jsp"/>
+		</action>
+		
+		<action path="/jstlfn"
+				type="com.bjsxt.struts.JstlFnAction"
+		>
+			<forward name="success" path="/jstl_fn.jsp"/>
+		</action>
+		
+	</action-mappings>
+</struts-config>
+

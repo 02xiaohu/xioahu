@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="hibernate_struts_training_itemmgr"
+  id="myeclipse.1185105291271"
+  context-root="/hibernate_struts_training_itemmgr"
+  j2ee-spec="1.4"
+  archive="hibernate_struts_training_itemmgr.war">
+  <attributes>
+    <attribute name="webrootdir" value="/WebRoot" />
+  </attributes>
+</project-module>
+
