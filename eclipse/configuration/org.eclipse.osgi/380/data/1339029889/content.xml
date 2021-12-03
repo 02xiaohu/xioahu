@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?metadataRepository version='1.2.0'?>
+<repository name='update site: http://download.oracle.com/otn_software/oepe/library/jersey-1.17.1-p002' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
+  <properties size='2'>
+    <property name='p2.timestamp' value='1631583321406'/>
+    <property name='site.checksum' value='0'/>
+  </properties>
+</repository>

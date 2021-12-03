@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2005, 2018 IBM Corporation and others.
+    This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License 2.0
+    which accompanies this distribution, and is available at
+    https://www.eclipse.org/legal/epl-2.0/
+
+    SPDX-License-Identifier: EPL-2.0
+
+    Contributors:
+        IBM Corporation - initial API and implementation
+ -->
+<feature
+      id="org.eclipse.wst.web_ui.feature"
+      label="%featureName"
+      version="3.17.0.v202002172151"
+      provider-name="%providerName"
+      plugin="org.eclipse.wst.web.ui">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <includes
+         id="org.eclipse.wst.web_userdoc.feature"
+         version="3.17.0.v202001081257"/>
+
+   <includes
+         id="org.eclipse.wst.web_core.feature"
+         version="3.17.0.v202002172151"/>
+
+   <includes
+         id="org.eclipse.wst.xml_ui.feature"
+         version="3.17.0.v202001091420"/>
+
+   <includes
+         id="org.eclipse.wst.json_ui.feature"
+         version="1.1.8.v201909302219"/>
+
+   <requires>
+      <import feature="org.eclipse.wst.jsdt.feature"/>
+      <import feature="org.eclipse.wst.common_ui.feature"/>
+      <import feature="org.eclipse.wst.server_ui.feature"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.wst.jsdt.web.core"
+         download-size="158"
+         install-size="321"
+         version="1.1.0.v201901071922"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.wst.jsdt.web.ui"
+         download-size="223"
+         install-size="470"
+         version="1.2.0.v201904272112"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.wst.html.ui.infopop"
+         download-size="13"
+         install-size="22"
+         version="1.0.201.v201903222120"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.wst.web.ui.infopop"
+         download-size="11"
+         install-size="16"
+         version="1.0.300.v201903222120"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.wst.css.ui"
+         download-size="313"
+         install-size="649"
+         version="1.1.300.v201911262315"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.wst.html.ui"
+         download-size="322"
+         install-size="685"
+         version="1.1.200.v201905301652"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.wst.web.ui"
+         download-size="85"
+         install-size="154"
+         version="1.2.100.v201902281912"
+         unpack="false"/>
+
+</feature>

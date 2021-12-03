@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2012, 2016 PDT Extension Group and others.
+    All rights reserved. This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License v1.0
+    which accompanies this distribution, and is available at
+    http://www.eclipse.org/legal/epl-v10.html
+   
+    Contributors:
+        PDT Extension Group - initial API and implementation
+ -->
+<feature
+      id="org.eclipse.php.composer"
+      label="%featureName"
+      version="5.3.0.201803070838"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <url>
+      <discovery label="Eclipse PDT Website" url="http://eclipse.org/pdt/"/>
+   </url>
+
+   <requires>
+      <import feature="org.eclipse.php"/>
+      <import feature="org.eclipse.wst.json_ui.feature"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.php.composer.api"
+         download-size="129"
+         install-size="251"
+         version="5.3.0.201803070838"/>
+
+   <plugin
+         id="org.eclipse.php.composer.core"
+         download-size="118"
+         install-size="241"
+         version="5.3.0.201803070838"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.php.composer.ui"
+         download-size="600"
+         install-size="1123"
+         version="5.3.0.201803070838"
+         unpack="false"/>
+
+</feature>

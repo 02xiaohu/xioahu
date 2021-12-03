@@ -1,0 +1,113 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: SuRuODKKBoOv6wPgl7yHxbCmqVjWk
+ 3ODvJDGm/XC5c4=
+SHA-256-Digest-Manifest: BTJBDIKjDjEj1AUXCoyXo4mXyucCMBjCHUV0s+Ii5V0=
+Created-By: 1.8.0_162 (Oracle Corporation)
+
+Name: org/apache/commons/logging/LogSource.class
+SHA-256-Digest: q7mScYuBT4/tMZiifcpouMJOa/Pj4EKnFDVwC3qyoCM=
+
+Name: org/apache/commons/logging/impl/ServletContextCleaner.class
+SHA-256-Digest: Lo56a6F/NU4to+7PgqURpsgtG3GghO+MYePF9C+qypU=
+
+Name: org/apache/commons/logging/Log.class
+SHA-256-Digest: cDgBADIEHujWJnzqxFb4pSpx6WUM3WI34haF2QFkvTE=
+
+Name: org/apache/commons/logging/LogFactory$3.class
+SHA-256-Digest: JfkNbMZZzTlPu2sRz8jXDkB/STG+Mdnwy2TL5PSaNbA=
+
+Name: org/apache/commons/logging/impl/LogFactoryImpl$2.class
+SHA-256-Digest: WBx/d4du2gR2hfSyNCIJRb5i9d+gmHi0kubtWds8Wgw=
+
+Name: org/apache/commons/logging/impl/LogKitLogger.class
+SHA-256-Digest: 4zTtE/VC5DEbdHasUD+fjNWKgarUArZt0CThmzetBCg=
+
+Name: META-INF/NOTICE.txt
+SHA-256-Digest: LHxyFVlpP8Iw6m0w/MTo/mA6MdQse/PCW8ZGz7xc5I0=
+
+Name: org/apache/commons/logging/impl/Jdk14Logger.class
+SHA-256-Digest: WUuHSxc6TOxMSJAzCPhkv/goJclX1uv6c2NGk2lhICE=
+
+Name: org/apache/commons/logging/LogConfigurationException.class
+SHA-256-Digest: IxAthx7e+ytvJ1BenSRSr/6/2YvgBQi/r7F0CwXDGFQ=
+
+Name: org/apache/commons/logging/impl/WeakHashtable$Referenced.class
+SHA-256-Digest: XOXwzge3Iq+DZ9J2lkE0vOsA3MQuq8nD2ib5T0fSFpI=
+
+Name: org/apache/commons/logging/impl/WeakHashtable$WeakKey.class
+SHA-256-Digest: A3eftnTqE/wFSvaZdlRX6zrccgmUTx1t+Afu+cD0rlI=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.apache.commons.logg
+ ing/pom.properties
+SHA-256-Digest: coyt6lLmGdklBBJ+Jzy1oGgClA8Bwd3raAMUt09YDK4=
+
+Name: org/apache/commons/logging/LogFactory$5.class
+SHA-256-Digest: qvVnSrCnVF3Aj/jcLfTHY4h6SjTznMiaw8PxDv5jecs=
+
+Name: org/apache/commons/logging/impl/LogFactoryImpl$1.class
+SHA-256-Digest: mGjfPiPy7+kPOOT+0zJ8VU0MIKIC4LJCYMLa33IEst0=
+
+Name: org/apache/commons/logging/impl/WeakHashtable.class
+SHA-256-Digest: cwLlWsqYeqDT+6ClXPH9i66Xc0EljVuZ4eKZ5vrS8U4=
+
+Name: org/apache/commons/logging/impl/LogFactoryImpl.class
+SHA-256-Digest: qJw7JiAm8DPkIRJJ9TpeLb0jh830ZFHdoWVlQwZOmmw=
+
+Name: org/apache/commons/logging/LogFactory.class
+SHA-256-Digest: HinC8ltPW9TRSrZRMW4UX2g8T8Lk7ZJa1uoOlr2qVxE=
+
+Name: about.html
+SHA-256-Digest: L4DrKhUFnzRtg0AHdkyIGGhHZqGKVzaG73pfLw8jPxk=
+
+Name: META-INF/LICENSE.txt
+SHA-256-Digest: MyjJKENGUfvz0V/q9cTAEGYQrfwhS1/ikbeqNSsR31g=
+
+Name: org/apache/commons/logging/impl/SimpleLog$1.class
+SHA-256-Digest: dbrf7ctWRmOZfRmt3xJMJ6z0VkYec7fgIqNn9SlPzao=
+
+Name: org/apache/commons/logging/LogFactory$4.class
+SHA-256-Digest: p767+BHefb+IL08mgVw6WwkuvdrNGLYm0yzqGWeZMS0=
+
+Name: org/apache/commons/logging/impl/WeakHashtable$1.class
+SHA-256-Digest: M+evhNfUPgSJjildU0Y0p5N/VisBpjUfh0AddOaCRX8=
+
+Name: about_files/THE_APACHE_SOFTWARE_LICENSE__VERSION_2.0.txt
+SHA-256-Digest: 70sq4AoiKPmbnFMVhYi1e9oPczCS6WKy+maEqwyunWY=
+
+Name: org/apache/commons/logging/LogFactory$2.class
+SHA-256-Digest: gH6zoi5r4Q1DOFQtB2u+vdzphBX9ESg6mcusqOA3VVY=
+
+Name: org/apache/commons/logging/impl/SimpleLog.class
+SHA-256-Digest: b7ZP2mNVoR+HwsHqIKS8MQuKutDEptEzhFbN0rZIWPI=
+
+Name: org/apache/commons/logging/impl/LogFactoryImpl$3.class
+SHA-256-Digest: LYX6A9tMhiS626WmCEmMDNMuGXjRLYsi9jPI6yGp76o=
+
+Name: org/apache/commons/logging/impl/WeakHashtable$Entry.class
+SHA-256-Digest: 57fqOCB1aZ29RqSnoi0WUucSwzI5zkpsm6IliOjlz6Q=
+
+Name: org/apache/commons/logging/impl/Log4JLogger.class
+SHA-256-Digest: Gt0Lkn0ImkhTspJHpqPUEEw+w0LtZra3QKXYxxOLY5Q=
+
+Name: org/apache/commons/logging/LogFactory$6.class
+SHA-256-Digest: 5kL7j61sirxgB6pVW4LIVe3x0D0a5Otjp/0GdP6e7Cg=
+
+Name: org/apache/commons/logging/LogFactory$1.class
+SHA-256-Digest: ahsa0f/Mvuz0DiFJecbJ3wwGYS/+CBUHNaiwlDY6cxs=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.apache.commons.logg
+ ing/pom.xml
+SHA-256-Digest: eVr7aHYtNn8iYlFYQ5HbjeX8Lq8jPtmr73YhvMT/MrQ=
+
+Name: org/apache/commons/logging/impl/AvalonLogger.class
+SHA-256-Digest: eokFNA/I0RvizKjnQKeHEgrQqdg737SnDWpxDcJ1yD4=
+
+Name: org/apache/commons/logging/impl/NoOpLog.class
+SHA-256-Digest: jYyXMrG4CscdU1nCuxkOenev0zkQe2gE8CaZsUikdpM=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: pFEgulpidyTTi/qDRW7aKrfJ3lbdrqQhqoTrWwkM/k0=
+
+Name: org/apache/commons/logging/impl/Jdk13LumberjackLogger.class
+SHA-256-Digest: XnE3RMHonnbfmB5dx42mTIAfpnH3LMgnTg9r8tM4W80=
+

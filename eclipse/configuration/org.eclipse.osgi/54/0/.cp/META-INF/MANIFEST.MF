@@ -1,0 +1,145 @@
+Manifest-Version: 1.0
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: org.apache.commons.logging
+Archiver-Version: Plexus Archiver
+Built-By: genie.orbit
+Implementation-Vendor-Id: org.apache
+Specification-Title: Apache Commons Logging
+Bundle-DocURL: http://commons.apache.org/proper/commons-logging/
+Import-Package: javax.servlet;resolution:=optional,org.apache.avalon.f
+ ramework.logger;resolution:=optional,org.apache.commons.logging;resol
+ ution:=optional;version="[1.2,2)",org.apache.commons.logging.impl;res
+ olution:=optional;version="[1.2,2)",org.apache.log;resolution:=option
+ al,org.apache.log4j;resolution:=optional
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.2))"
+Export-Package: org.apache.commons.logging.impl;x-internal:=true;versi
+ on="1.2.0";uses:="javax.servlet,org.apache.avalon.framework.logger,or
+ g.apache.commons.logging,org.apache.log,org.apache.log4j",org.apache.
+ commons.logging;version="1.2.0"
+Bundle-Name: %bundleName
+Bundle-Description: Apache Commons Logging is a thin adapter allowing 
+ configurable bridging to other,    well known logging systems.
+Implementation-Title: Apache Commons Logging
+Automatic-Module-Name: org.apache.commons.logging
+Implementation-Version: 1.2
+Bundle-ManifestVersion: 2
+Specification-Vendor: The Apache Software Foundation
+Bundle-Vendor: %bundleVendor
+Implementation-Vendor: The Apache Software Foundation
+Originally-Created-By: Apache Maven Bundle Plugin
+Bundle-Version: 1.2.0.v20180409-1502
+X-Compile-Target-JDK: 1.2
+Implementation-Build: tags/LOGGING_1_2_RC2@r1608092; 2014-07-05 20:11:
+ 44+0200
+X-Compile-Source-JDK: 1.2
+Created-By: Eclipse Bundle Recipe Maven Plug-in
+Build-Jdk: 1.8.0_162
+Specification-Version: 1.2
+
+Name: org/apache/commons/logging/LogSource.class
+SHA-256-Digest: Gfgau07DtJ2WH430hWI+SHS/CGqJ2Uxzj9YTCkL36qk=
+
+Name: org/apache/commons/logging/impl/ServletContextCleaner.class
+SHA-256-Digest: Iy4zYtUNq4Au10zf37XRGXZOoBqq9+a/lybrmDqDRM4=
+
+Name: org/apache/commons/logging/Log.class
+SHA-256-Digest: DqOlgKAGVREnk/ROKt4jNNu+89OfyzFj2rFJxv4rD6o=
+
+Name: org/apache/commons/logging/LogFactory$3.class
+SHA-256-Digest: /TnXitapJzpjHAZxghHLwzLspReX6U5XJZRzjn/E1t4=
+
+Name: org/apache/commons/logging/impl/LogFactoryImpl$2.class
+SHA-256-Digest: V177W9ip76kRwQMaSQ0oYgKsq2onTyHuoMFYvSGWNPY=
+
+Name: org/apache/commons/logging/impl/LogKitLogger.class
+SHA-256-Digest: JZ8ffdBCJqVYgegWA3zxBOoVrrop6NamL9wbW6m7Y9k=
+
+Name: META-INF/NOTICE.txt
+SHA-256-Digest: eFBxqUq2EzAAFkvG7YVD2ogjFQN2jf6tzIOEevmc+Pg=
+
+Name: org/apache/commons/logging/impl/Jdk14Logger.class
+SHA-256-Digest: Ze0oTkR0qezeOPCtyIkwtJGOW2+5TfDC0bf5WDhfWM4=
+
+Name: org/apache/commons/logging/LogConfigurationException.class
+SHA-256-Digest: 1njjPXr5LCHIi7xVKKmBm3hNJMUD5wLPAd00+4QKAfU=
+
+Name: org/apache/commons/logging/impl/WeakHashtable$Referenced.class
+SHA-256-Digest: FYHenBdy3HluE34yAYOWwxQ8l5gWTeNoUVJIRx5auQo=
+
+Name: org/apache/commons/logging/impl/WeakHashtable$WeakKey.class
+SHA-256-Digest: J9M6LgLD6BxEuEuI3Uxn2/HrZb5aqlWhxwbT4O0zlfs=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.apache.commons.logg
+ ing/pom.properties
+SHA-256-Digest: zmgMzEuM8+ACYAdUVyD6ZewVXn+D0AqIVxSx2P23q1Q=
+
+Name: org/apache/commons/logging/LogFactory$5.class
+SHA-256-Digest: jFKDvcpLMLNmshmmNKVw5ThOt1FdAZYvsRckb/QgPgc=
+
+Name: org/apache/commons/logging/impl/LogFactoryImpl$1.class
+SHA-256-Digest: GcOLK1vpXmedrsvgVYEVUc7QdJDgsZXloRRF4D63TTg=
+
+Name: org/apache/commons/logging/impl/WeakHashtable.class
+SHA-256-Digest: w9hpscx6cvrVwP8TueeOo2wz5m3Gcvh86AeYUyIqX2U=
+
+Name: org/apache/commons/logging/impl/LogFactoryImpl.class
+SHA-256-Digest: klJBuDJZHAxzBJ/w0z9TuKbI7mCGwCA/C81L8Z4pTnc=
+
+Name: org/apache/commons/logging/LogFactory.class
+SHA-256-Digest: xUVKdEKllKgJKJAvw+drpSV/BKTqDy3sHQaskyhLjgI=
+
+Name: about.html
+SHA-256-Digest: +1lS3jLw1L37rk1y+UDP/lYd/IZDL3Lnyxns6G6fiTA=
+
+Name: META-INF/LICENSE.txt
+SHA-256-Digest: z8d0m5b2O9McPEK1xHG/dWgUBT6EfBDz6wA0F7xSPTA=
+
+Name: org/apache/commons/logging/impl/SimpleLog$1.class
+SHA-256-Digest: nkl+Zl7L3e/Ln1w5ac9alK66Tltz0I55PoZ7Mb7eH3g=
+
+Name: org/apache/commons/logging/LogFactory$4.class
+SHA-256-Digest: ucwLcpJmfQsDu5bPKXNrs22onUGp+21anPgH1nVZgNM=
+
+Name: org/apache/commons/logging/impl/WeakHashtable$1.class
+SHA-256-Digest: Y36DQl6QuvABSyhBBjMLnahRdJEH/WAlgiZTonlL9aQ=
+
+Name: about_files/THE_APACHE_SOFTWARE_LICENSE__VERSION_2.0.txt
+SHA-256-Digest: z8d0m5b2O9McPEK1xHG/dWgUBT6EfBDz6wA0F7xSPTA=
+
+Name: org/apache/commons/logging/LogFactory$2.class
+SHA-256-Digest: N+1yNIVdYxVOR+3GAmYjDZmh0ENZrwjx59oLd4DRcKg=
+
+Name: org/apache/commons/logging/impl/SimpleLog.class
+SHA-256-Digest: +k66q4fwu/syQXI2MxuDE73DWTr7ANXfDzNhQ+Dg6pk=
+
+Name: org/apache/commons/logging/impl/LogFactoryImpl$3.class
+SHA-256-Digest: lrxGVP73jfDmxiw2dOU6qhDKsA/TewiotU1uAzJ/HeE=
+
+Name: org/apache/commons/logging/impl/WeakHashtable$Entry.class
+SHA-256-Digest: +od472WaNHbKGeM2Mh5Sw0ZSzlB842u3NCqVTd2OQ5k=
+
+Name: org/apache/commons/logging/impl/Log4JLogger.class
+SHA-256-Digest: ys1X76ABc3a1PO31E9BU2ZojKS1BsRE5Rjh0Yz4BRJE=
+
+Name: org/apache/commons/logging/LogFactory$6.class
+SHA-256-Digest: 1wt8Z8ltfxtMOMAa+c3IZ5mwStvnbBdqfTDvWIlLXzw=
+
+Name: org/apache/commons/logging/LogFactory$1.class
+SHA-256-Digest: CFAbrzm+1eL7qjcqWimc78WxVpBEculGGL8Jt2wQeiM=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.apache.commons.logg
+ ing/pom.xml
+SHA-256-Digest: PyTfTJplXAlmopofuHcVhXMPvuVjU0yji6eM7kDDg8Q=
+
+Name: org/apache/commons/logging/impl/AvalonLogger.class
+SHA-256-Digest: jnyqruvNmt3UKjdl8T1gCtE/9dZsiOvIxfwVUVwD3S8=
+
+Name: org/apache/commons/logging/impl/NoOpLog.class
+SHA-256-Digest: SwS9j65bFktJvG2nZI+57lUs4xk35KenBJQe5cLBtxU=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: 4FcXmpHV+zOCY3qErph/luhTddtoNEC0N5Wt1Oo/sEQ=
+
+Name: org/apache/commons/logging/impl/Jdk13LumberjackLogger.class
+SHA-256-Digest: CJHKC5685n0scYMIv5jwN0RfuJiJ6ysTGJpKPYgXnXQ=
+

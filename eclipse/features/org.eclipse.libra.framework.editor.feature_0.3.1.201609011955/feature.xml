@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.libra.framework.editor.feature"
+      label="%featureName"
+      version="0.3.1.201609011955"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+   
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.eclipse.libra.framework.editor.core"
+         download-size="14"
+         install-size="18"
+         version="0.3.1.201609011955"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.libra.framework.editor.ui"
+         download-size="143"
+         install-size="303"
+         version="0.3.1.201609011955"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.libra.framework.editor.integration"
+         download-size="36"
+         install-size="62"
+         version="0.3.1.201609011955"
+         unpack="false"/>
+
+   <plugin
+         id="osgi.enterprise"
+         download-size="155"
+         install-size="301"
+         version="4.2.0.v201108120515"
+         unpack="false"/>
+
+</feature>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?compositeMetadataRepository version='1.0.0'?>
+<repository 
+     name='m2e 1.6.x release repository'
+     type='org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository' 
+     version='1.0.0'>
+
+  <properties size='1'>
+    <property name='p2.timestamp' value='4'/>
+  </properties>
+
+  <children size='3'>
+    <child location='1.6.2.20150902-0002'/>
+    <child location='1.6.1.20150625-2338'/>
+    <child location='1.6.0.20150526-2032'/>
+  </children>
+</repository>
