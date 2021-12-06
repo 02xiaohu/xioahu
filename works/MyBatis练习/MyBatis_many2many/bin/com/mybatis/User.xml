@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mybatis.Mapper">
+
+<!--执行增加操作的SQL语句。id和parameterType  
+       分别与IUserOperation接口中的addUser方法的名字和  
+       参数类型一致。以#{name}的形式引用Student参数  
+       的name属性，MyBatis将使用反射读取Student参数  
+       的此属性。#{name}中name大小写敏感。引用其他  
+       的gender等属性与此一致。seGeneratedKeys设置  
+       为"true"表明要MyBatis获取由数据库自动生成的主  
+       键；keyProperty="id"指定把获取到的主键值注入  
+       到Student的id属性--> 
+ <insert id="addUser" parameterType="User" 
+        useGeneratedKeys="true" keyProperty="id"> 
+        insert into t_user(username)  
+             values(#{name})  
+ </insert>
+  
+   
+ <insert id="addUserRole" parameterType="UseRole" > 
+    
+        insert into t_user_role(userid,roleid)  
+             values(#{uesrid},#{roleid})  
+ </insert>
+ 
+   <!-- User 多对多的方式进行查询 方法的配置    
+   <resultMap type="User" id="resultListRole" extends="resultUser">
+      <collection property="roles" ofType="Role" >
+        <id column="bid" property="id" />
+        <result column="rolename" property="name" />
+      </collection>   
+    </resultMap>
+
+     
+    <resultMap id="resultUser" type="User">
+        <id property="id" column="aid" />
+        <result property="name" column="username" />
+        
+    </resultMap>
+      --> 
+    <resultMap type="User" id="resultListRole">
+      <id property="id" column="aid" />
+      <result property="name" column="username" />
+      <collection property="roles" ofType="Role" >
+        <id column="bid" property="id" />
+        <result column="rolename" property="name" />
+      </collection>   
+    </resultMap>
+
+     
+     
+    
+    <select id="getUser" parameterType="int" resultMap="resultListRole">
+       select t_user.id aid,t_role.id bid, username ,rolename  from t_user,t_role,t_user_role
+              where t_user_role.roleid=t_role.id and t_user.id=t_user_role.userid and t_user.id=#{id}
+    </select>
+</mapper>

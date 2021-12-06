@@ -1,0 +1,11 @@
+title=SpringMVC实例   
+username=输入用户名:    
+password=输入密码:    
+password2=确认密码:   
+submit=提交   
+welcome=欢迎     
+loginfailure=登录失败
+loginSuccess=登录成功     
+usernameerror=用户名不正确   
+passworderror=密码不正确    
+doublepassword=2次密码不一致   

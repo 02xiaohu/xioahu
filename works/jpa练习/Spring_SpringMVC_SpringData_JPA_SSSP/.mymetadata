@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="Spring_SpringMVC_SpringData_JPA_SSSP"
+  id="myeclipse.1608366510015"
+  context-root="/Spring_SpringMVC_SpringData_JPA_SSSP"
+  j2ee-spec="5.0"
+  archive="Spring_SpringMVC_SpringData_JPA_SSSP.war">
+  <attributes>
+    <attribute name="webrootdir" value="/WebRoot" />
+  </attributes>
+</project-module>
+

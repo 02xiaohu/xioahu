@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+ <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+  "http://www.springframework.org/dtd/spring-beans.dtd"> 
+  
+ 
+ <beans> 
+     <bean id = "simpleUrlHandlerMapping" class ="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping"> 
+         <property name ="mappings"> 
+             <props> 
+                 <prop key ="/login.do">loginControl</prop> 
+             </props> 
+         </property> 
+     </bean> 
+     <bean id ="loginControl"   class ="com.asm.spmvclogin"/> 
+     
+     <bean id="viewResolver"  class="org.springframework.web.servlet.view.InternalResourceViewResolver">            
+     <property name="prefix" value="/WEB-INF/page/" />            
+     <property name="suffix" value=".jsp" />
+     </bean>  
+     
+ </beans> 

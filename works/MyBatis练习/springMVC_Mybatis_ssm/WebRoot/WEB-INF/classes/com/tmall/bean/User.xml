@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tmall.inter.OperationMapper">
+
+<!-- 为了返回list 类型而定义的returnMap   -->
+    <resultMap type="com.tmall.bean.User" id="resultListUser">
+        <id column="id" property="id" />
+        <result column="username" property="username" />
+        <result column="password" property="password" />
+      
+    </resultMap>
+    
+  <!--返回list 的select 语句，注意 resultMap 的值是指向前面定义好的 -->
+    <select id="selectUsers"   resultMap="resultListUser">
+        select * from user  
+    </select>
+    
+   
+
+ 
+ <!--执行增加操作的SQL语句。id和parameterType  
+       分别与IUserOperation接口中的addUser方法的名字和  
+       参数类型一致。以#{name}的形式引用Student参数  
+       的name属性，MyBatis将使用反射读取Student参数  
+       的此属性。#{name}中name大小写敏感。引用其他  
+       的gender等属性与此一致。seGeneratedKeys设置  
+       为"true"表明要MyBatis获取由数据库自动生成的主  
+       键；keyProperty="id"指定把获取到的主键值注入  
+       到Student的id属性--> 
+ <insert id="addUser" parameterType="com.tmall.bean.User" 
+        useGeneratedKeys="true" keyProperty="id"> 
+        insert into user(username,password)  
+             values(#{username},#{password})  
+ </insert>
+ 
+ <!--执行查询数据的SQL语句-->
+ <select id="selectUserByID" parameterType="int" resultType="com.tmall.bean.User">
+        select * from  user where id = #{id}
+ </select>
+ 
+ <!--执行删除数据的SQL语句-->
+ <delete id="deleteUser" parameterType="int" >
+        delete from  user where id = #{id}
+ </delete>
+  
+<!--执行更新数据的SQL语句-->
+ <update id="updateUser" parameterType="com.tmall.bean.User" >
+       update user set 
+       username=#{username},
+       password=#{password}
+       where id=#{id}
+ </update>
+       
+</mapper>

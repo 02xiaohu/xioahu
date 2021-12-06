@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mybatis.Mapper">
+
+    <!-- 继承映射多态查询配置 -->
+    <select id="getAnimalBy" parameterType="int" resultMap="AnimalMap">
+		select * from t_animal where id= #{id}
+	</select>
+ 
+    <resultMap type="Animal" id="AnimalMap">
+	   <id property="id" column="id"/>
+	   <result property="name" column="name"/>
+	   <result property="sex" column="sex"/>
+	   <discriminator javaType="string" column="type">
+		   <case value="P" resultType="Pig">
+			   <result property="weight" column="weight"/>
+		   </case>
+		   <case value="B" resultType="Bird">
+			   <result property="height" column="height"/>
+		   </case>
+	   </discriminator>
+    </resultMap>
+    
+   <!-- 执行增加Pig操作的SQL语句 -->
+   <insert id="addPig" parameterType="Pig" 
+        useGeneratedKeys="true" keyProperty="id"> 
+        insert into t_animal(type,name,sex,weight)  
+             values(#{type},#{name},#{sex},#{weight})  
+   </insert>
+ 
+   <!-- 执行增加Bird操作的SQL语句 -->
+   <insert id="addBird" parameterType="Bird" 
+        useGeneratedKeys="true" keyProperty="id"> 
+        insert into t_animal(type,name,sex,height)  
+             values(#{type},#{name},#{sex},#{height})  
+   </insert>
+
+
+</mapper>
